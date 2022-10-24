@@ -1,0 +1,393 @@
+* {
+    font-family: 'NanumSquare';
+}
+
+#board h2 {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.board__wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.board__inner {
+    position: relative;
+    padding: 120px 0 0 0;
+}
+
+
+/* board__search */
+.board__search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    margin-bottom: 20px;
+    align-items: flex-end;
+}
+
+.board__search .left em {
+    color: red;
+}
+
+.board__search .left legend {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.board__search .left #searchKeyword {
+    /* border: 1px solid #194330; */
+    width: 300px;
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #666;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 0;
+    background-color: #f9f9f9;
+}
+
+.board__search .left #searchOption {
+    /* border: 1px solid #194330; */
+    padding: 7px 15px;
+    font-size: 1rem;
+    color: #666;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 0;
+    background-color: #f9f9f9;
+}
+
+.board__search .left .searchBtn {
+    position: relative;
+}
+
+.board__search .left .searchBtn img {
+    position: absolute;
+    content: '';
+    top: -13px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.board__search .btn {
+    background: #363636;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* board__pages */
+.board__pages {
+    margin: 30px 0 50px;
+}
+
+.board__pages ul {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.board__pages ul li {
+    display: inline-block;
+}
+
+.board__pages ul li a {
+    padding: 13px 10px;
+    margin-right: -1px;
+    color: #999;
+}
+
+.board__pages ul li.active a {
+    color: #333;
+    font-weight: 700;
+}
+
+
+.board__title h3 {
+    display: flex;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #4461f2;
+    /* text-shadow: -1px 0 #194330, 0 1px #194330, 1px 0 #194330, 0 -1px #194330; */
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.board__title h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 2.4em;
+    color: #F7CAC9;
+    /* text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555; */
+}
+
+.board__title p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 90px;
+
+}
+
+.board__title span {
+    width: 3px;
+    height: 20px;
+    background-color: #92a8d1;
+    margin-left: 10px;
+}
+
+#youPass {
+    border: 1px solid #c6c6c6;
+    width: 45%;
+    height: 25px;
+    padding: 20px;
+}
+
+.writepw {
+    display: flex;
+}
+
+.writepw>span {
+    display: inline;
+    margin: 20px;
+}
+
+/* List */
+
+.list__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+
+}
+.list:hover {
+    /* border-bottom: 1px solid #999;
+    border-right: 1px solid #999; */
+    box-shadow: 5px 5px 30px 3px #4461f22f;
+}
+
+.list_title {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.list_title span {
+    padding-top: 5px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4461F2;
+}
+
+.list__img {
+    margin-bottom: 13px;
+}
+.list__img a img {
+    border-radius: 10px;
+}
+
+.list__icon img {
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+
+}
+
+.heart {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 197px;
+}
+
+.share {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+/* 소품샵 글 */
+
+
+
+#Post h2 {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.Post__wrap {
+
+}
+
+.Post__inner {
+    position: relative;
+    padding: 120px 0 0 0;
+}
+
+
+
+.Post__title {
+        max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+
+.Post__title h3 {
+
+    display: flex;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #4461f2;
+    /* text-shadow: -1px 0 #194330, 0 1px #194330, 1px 0 #194330, 0 -1px #194330; */
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.Post__title h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 2.4em;
+    color: #F7CAC9;
+    /* text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555; */
+}
+
+.post__box {
+    margin: 0 0;
+    background: #ddd;
+    padding: 60px;
+}
+
+.postWrite {
+    width: 1160px;
+    height: 1000px;
+    margin: 0 auto;
+    padding: 70px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 10px;
+    
+}
+
+.post__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img {
+    width: 472px;
+    height: 472px;
+    background: #F7F7F7;
+
+}
+
+.img__button{
+margin-top: 185px;
+}
+.img label > p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn-upload {
+    width: 50px;
+    height: 50px;
+    background: url(../img/imgUploadbutton.svg);
+    margin: 15px auto;
+    cursor: pointer;
+  }
+
+#file {
+    display: none;
+}
+
+
+
+.text > div {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.shop__info {
+    text-align: right;
+}
+
+.shop__info span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4461F2;
+}
+
+.shop__info > div > input {
+    width: 374px;
+    height: 30px;
+    border: 2px solid #E9E9E9;
+    background: #dadada;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.map {
+    width: 435px;
+    height: 200px;
+    background: #000;
+    float: right;
+    margin-top: 20px;
+}
+
+.post__heart {
+    width: 31px;
+    height: 31px;
+    background: url(../img/List_heart.svg) no-repeat center;
+    display: inline-block;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.post__share {
+    width: 31px;
+    height: 31px;
+    background: url(../img/List_share.svg) no-repeat center;
+    display: inline-block;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
