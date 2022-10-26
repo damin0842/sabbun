@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/js/test/aos.css">
-    <!-- <link rel="stylesheet" href="assets/js/test/common.css"> -->
+    <link rel="stylesheet" href="assets/js/test/common.css">
     <link rel="stylesheet" href="assets/js/test/fullpage.min.css">
     <link rel="stylesheet" href="assets/js/test/style.css">
     <link rel="stylesheet" href="assets/js/test/swiper.min.css">
@@ -60,7 +60,7 @@
     <!-- // headerType -->
 
     <main >
-        <div class="inner-sub">
+        <!-- <div class="inner-sub">
             <h2 class="page-tit">사뿐소품</h2>
             <ul class="prjt-list-filter">
                 <li class="active"><button type="button" data-filter="all">BEST</button></li>
@@ -150,6 +150,26 @@
             <div>
                 <div class="swiper-scrollbar"></div>
             </div>
+        </div> -->
+
+        <div class="difference">
+            <p class="bg-txt">
+                다름과 함께 다르게 커뮤니케이션
+            </p>
+            <div class="inner-sub">
+                <dl class="stroke">
+                    <dt>남다른 경험</dt>
+                    <dd>
+                        다름과 함께 <em>소통</em>하며<br>
+                        가치 있는 브랜드를<br>
+                        <em>경험</em>해보세요
+                    </dd>
+                </dl>
+                <p>
+                    각 부문 전문가들의 오랜 노하우를 바탕으로 온라인 기반의 <br>시스템 통합 구축 사업에 최적화된 Total DX Service를 제공합니다.<br><br>
+                    고객과의 남다른 커뮤니케이션, 남다른 기술력을 바탕으로<br> 고객의 니즈에 맞는 컨설팅부터 서비스 구축 및 운영까지 공동의 목표를 달성합니다.<br> 우리는 브랜드의 가능성을 발견하고 그것을 현실화합니다. 
+                </p>
+            </div>
         </div>
     </main>
     <!-- //main -->
@@ -199,13 +219,13 @@
 </body>
 
 <script src="assets/js/test/aos.js"></script>
-<!-- <script src="assets/js/test/common.js"></script> -->
+<script src="assets/js/test/common.js"></script>
 <script src="assets/js/test/fullpage.min.js"></script>
 <script src="assets/js/test/jquery-3.4.1.min.js"></script>
 <script src="assets/js/test/scrolloverflow.min.js"></script>
 <script src="assets/js/test/swiper.min.js"></script>
 <script src="assets/js/test/TweenMax.min.js"></script>
-<script>
+<!-- <script>
     $(document).ready(function () {
         prjtWidth();
         var prjtSlide = new Swiper(".prjt-list-rail", {
@@ -260,5 +280,14 @@
 
         $(".prjt-scroll-wrap").css("padding-left", minusWidth + "px");
     }
+</script> -->
+<script>
+    $(window).scroll(function(){
+        var scroll = $(this).scrollTop(),
+            scrollVal = scroll / 1.3,
+            scrollTxt = $('.bg-txt');
+        
+        TweenMax.to(scrollTxt, .5, {x:-scrollVal})
+    });
 </script>
 </html>

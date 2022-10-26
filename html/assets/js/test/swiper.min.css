@@ -34,7 +34,7 @@
 .swiper-wrapper {
     position: relative;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     z-index: 1;
     display: -webkit-box;
     display: -webkit-flex;
@@ -73,7 +73,7 @@
     -ms-flex-negative: 0;
     flex-shrink: 0;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     position: relative;
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;

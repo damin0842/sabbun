@@ -6,7 +6,6 @@
     $myBoardID = $_GET['myBoardID'];
     $myBoardID = $connect -> real_escape_string($myBoardID);
     $myMemberID = $_SESSION['myMemberID'];
-    $youPass = $_Get['youPass'];
 
 
     $sql = "SELECT myMemberID FROM myBoard WHERE myBoardID = {$myBoardID}";
@@ -14,25 +13,20 @@
     $myBoardMember = $result2 -> fetch_array(MYSQLI_ASSOC);
 
 
-    $sql = "SELECT myMemberID, youPass FROM myBMember WHERE myMemberID = {$myMemberID}";
+    $sql = "SELECT myMemberID FROM myBMember WHERE myMemberID = {$myMemberID}";
     $result = $connect -> query($sql);
     $memberInfo = $result -> fetch_array(MYSQLI_ASSOC);
 
     
     if($memberInfo['myMemberID'] === $myMemberID && $myBoardMember['myMemberID'] === $myMemberID ){
-        
-        if($memberInfo['youPass'] === $youPass){
-            $sql = "DELETE FROM myBoard WHERE myBoardID = {$myBoardID}";
-            $connect -> query($sql);
-        }else{
-            echo "<script>alert('비밀번호가 틀립니다.'); history.back(1)</script>";
-        }
-        
+        $sql = "DELETE FROM myBoard WHERE myBoardID = {$myBoardID}";
+        $connect -> query($sql);
     } else {
-        echo "<script>alert('내가 작성한 글이 아닙니다. 다시 한번 확인해주세요!'); history.back(1)</script>";
+        echo "<script>alert('내가 작성한 글이 아닙니다. 다시 한번 확인해주세요!')</script>";
     } 
 ?>
 
 <script>
+    location.href="board.php";
 </script>
 

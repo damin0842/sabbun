@@ -55,6 +55,7 @@
 
             } else {
                 echo "<script>alert('지원하는 이미지 파일이 아닙니다.'); history.back(1)</script>";
+                exit;
             }
         }
     }else {
@@ -66,6 +67,9 @@
     if($blogImgSize > 1000000){
         echo "<script>alert('이미지 용량이 1메가를 초과했습니다.'); history.back(1)</script>";
         exit;
+    }else{
+        "<script>alert('회원 정보가 수정됐습니다.');</script>";
+        Header("Location: ../main/main.php");
     }
 
    
@@ -73,15 +77,10 @@
 
 
 ?>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
 
 <script>
-   
-Swal.fire('회원 정보가 수정 되었습니다.');
- setTimeout(() => {
-        window.location.href = "../main/main.php";
-    }, 3000);
 
 
 

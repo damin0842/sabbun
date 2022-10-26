@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../html/assets/css/common.css">
     <link rel="stylesheet" href="../html/assets/css/reset.css">
     <link rel="stylesheet" href="../html/assets/css/header.css">
-    <link rel="stylesheet" href="../html/assets/css/myPage.css">
+    <link rel="stylesheet" href="../html/assets/css/myPage2.css">
     <link rel="stylesheet" href="../html/assets/css/footer.css">
 
     <style>

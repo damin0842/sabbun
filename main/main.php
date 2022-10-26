@@ -21,310 +21,413 @@
     <?php include "../include/header.php" ?>
     <!-- // header -->
 
-    <main id="mainType" class="nanum">
-        <section id="sliderType" class="slider__wrap scroll">
-            <h2 class="ir">Hot Issue</h2>
-            <div class="slider__inner">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="desc">
-                                <span>사뿐소품1</span>
-                                <h3>사뿐소품1</h3>
-                                <p>
-                                    다이어리는 이제 기록을 넘어선 문화 예술이 되었습니다.<br>
-                                    다이어리 꾸미기의 매력에 빠져보세요
-                                </p>
-                                <div class="btn">
-                                    <a href="#">자세히보기</a>
-                                    <a href="#" class="black">사이트보기</a>
+    <main>
+        <section id="slider1" class="slider1 nanum">
+            <div class="slider__tit">
+                <h2 class="title">소품#</h2>
+                <ul class="slider__tab">
+                    <li class="active"><button type="button" data-filter="store">ALL</button></li>
+                    <li><button type="button" data-filter="BEST">BEST</button></li>
+                    <li><button type="button" data-filter="NEW">NEW</button></li>
+                </ul>
+            </div>
+            <div class="slider__list__wrap swiper">
+                <ul class="slider__list swiper-wrapper">
+                    <li class="store swiper-slide">
+                        <a href="#">
+                            <div class="image">
+                                <img src="../html/assets/img/store1.jpg" alt="미미도넛" />
+                                <div>
+                                    <p class="tag">
+                                        <span>#홍대</span>
+                                        <span>#키덜트</span>
+                                        <span>#귀여운</span>
+                                        <span>#통통튀는</span>
+                                    </p>
+                                    <p class="name">미미도넛</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="desc">
-                                <span>사뿐소품2</span>
-                                <h3>사뿐소품2</h3>
-                                <p>
-                                    다이어리는 이제 기록을 넘어선 문화 예술이 되었습니다.<br>
-                                    다이어리 꾸미기의 매력에 빠져보세요
-                                </p>
-                                <div class="btn">
-                                    <a href="#">자세히보기</a>
-                                    <a href="#" class="black">사이트보기</a>
+                            <p class="location"><span></span>서울특별시 마포구 동교동 177-4</p>
+                        </a>
+                    </li>
+                    <li class="BEST store swiper-slide">
+                        <a href="#">
+                            <div class="image">
+                                <img src="../html/assets/img/store2.jpg" alt="오브젝트" />
+                                <div>
+                                    <p class="tag">
+                                        <span>#홍대</span>
+                                        <span>#신진디자이너</span>
+                                        <span>#전시</span>
+                                        <span>#팝업스토어</span>
+                                    </p>
+                                    <p class="name">오브젝트</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="desc">
-                                <span>사뿐소품3</span>
-                                <h3>사뿐소품3</h3>
-                                <p>
-                                    다이어리는 이제 기록을 넘어선 문화 예술이 되었습니다.<br>
-                                    다이어리 꾸미기의 매력에 빠져보세요
-                                </p>
-                                <div class="btn">
-                                    <a href="#">자세히보기</a>
-                                    <a href="#" class="black">사이트보기</a>
+                            <p class="location"><span></span>서울특별시 마포구 와우산로35길 13</p>
+                        </a>
+                    </li>
+                    <li class="BEST store swiper-slide">
+                        <a href="#">
+                            <div class="image">
+                                <img src="../html/assets/img/store3.jpg" alt="메이드모먼" />
+                                <div>
+                                    <p class="tag">
+                                        <span>#홍대</span>
+                                        <span>#감성</span>
+                                        <span>#기본템</span>
+                                        <span>#깔끔</span>
+                                    </p>
+                                    <p class="name">메이드모먼</p>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button">
-                        <div class="swiper-button-play"><span class="ir">play</span></div>
-                        <div class="swiper-button-stop"><span class="ir">stop</span></div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-
+                            <p class="location"><span></span>서울특별시 마포구 서교동 330-9 1층</p>
+                        </a>
+                    </li>
+                    <li class="NEW store swiper-slide">
+                        <a href="#">
+                            <div class="image">
+                                <img src="../html/assets/img/store4.jpg" alt="잼머의집" />
+                                <div>
+                                    <p class="tag">
+                                        <span>#홍대</span>
+                                        <span>#동화감성</span>
+                                        <span>#인테리어</span>
+                                        <span>#패브릭</span>
+                                    </p>
+                                    <p class="name">잼머의 집</p>
+                                </div>
+                            </div>
+                            <p class="location"><span></span>서울특별시 마포구 연남로 43-2 초록대문</p>
+                        </a>
+                    </li>
+                    <li class="BEST store swiper-slide">
+                        <a href="#">
+                            <div class="image">
+                                <img src="../html/assets/img/store5.jpg" alt="어프어프" />
+                                <div>
+                                    <p class="tag">
+                                        <span>#홍대</span>
+                                        <span>#마니아</span>
+                                        <span>#생필품</span>
+                                        <span>#자체제작</span>
+                                    </p>
+                                    <p class="name">어프어프<br>홍대점</p>
+                                </div>
+                            </div>
+                            <p class="location"><span></span>서울특별시 마포구 와우산로27길 35</p>
+                        </a>
+                    </li>
+                    <li class="NEW store swiper-slide">
+                        <a href="#">
+                            <div class="image">
+                                <img src="../html/assets/img/store6.jpg" alt="오월상점" />
+                                <div>
+                                    <p class="tag">
+                                        <span>#홍대</span>
+                                        <span>#다꾸러</span>
+                                        <span>#동백시그니처</span>
+                                        <span>#아기자기</span>
+                                    </p>
+                                    <p class="name">오월상점</p>
+                                </div>
+                            </div>
+                            <p class="location"><span></span>서울특별시 마포구 서교동 340-2</p>
+                        </a>
+                    </li>
+                    <li class="store swiper-slide">
+                        <a href="#">
+                            <div class="image">
+                                <img src="../html/assets/img/store7.jpg" alt="알로하거제" />
+                                <div>
+                                    <p class="tag">
+                                        <span>#거제</span>
+                                        <span>#빈티지</span>
+                                        <span>#우드</span>
+                                        <span>#인테리어</span>
+                                    </p>
+                                    <p class="name">ALOHA GEOJE</p>
+                                </div>
+                            </div>
+                            <p class="location"><span></span>경남 거제시 장목면 율천대금길 88-26</p>
+                        </a>
+                    </li>
+                    <li class="BEST store swiper-slide">
+                        <a href="#">
+                            <div class="image">
+                                <img src="../html/assets/img/store8.jpg" alt="만두상점" />
+                                <div>
+                                    <p class="tag">
+                                        <span>#제주</span>
+                                        <span>#애견동반</span>
+                                        <span>#라탄</span>
+                                        <span>#카페운영</span>
+                                    </p>
+                                    <p class="name">ㅁㄷㅅㅈ</p>
+                                </div>
+                            </div>
+                            <p class="location"><span></span>제주 제주시 조천읍 함덕남14길 6 만두상점</p>
+                        </a>
+                    </li>
+                    <li class="BEST store swiper-slide">
+                        <a href="#">
+                            <div class="image">
+                                <img src="../html/assets/img/store9.jpg" alt="디자인에이비" />
+                                <div>
+                                    <p class="tag">
+                                        <span>#제주</span>
+                                        <span>#아티스트</span>
+                                        <span>#엽서</span>
+                                        <span>#디퓨저</span>
+                                    </p>
+                                    <p class="name">DESIGN AB</p>
+                                </div>
+                            </div>
+                            <p class="location"><span></span>제주 제주시 한경면 판포4길 22</p>
+                        </a>
+                    </li>
+                    <li class="BEST store swiper-slide">
+                        <a href="#">
+                            <div class="image">
+                                <img src="../html/assets/img/store10.jpg" alt="수풀" />
+                                <div>
+                                    <p class="tag">
+                                        <span>#제주</span>
+                                        <span>#인테리어</span>
+                                        <span>#오브제</span>
+                                        <span>#그립톡</span>
+                                    </p>
+                                    <p class="name">SUPUL</p>
+                                </div>
+                            </div>
+                            <p class="location"><span></span>제주 제주시 한림읍 명랑로 8 2층</p>
+                        </a>
+                    </li>
+                    <li class="NEW store swiper-slide">
+                        <a href="#">
+                            <div class="image">
+                                <img src="../html/assets/img/store11.jpg" alt="메리아일랜드" />
+                                <div>
+                                    <p class="tag">
+                                        <span>#제주</span>
+                                        <span>#핸드메이드</span>
+                                        <span>#캔들</span>
+                                        <span>#클래스</span>
+                                    </p>
+                                    <p class="name">MERRY ISLAND</p>
+                                </div>
+                            </div>
+                            <p class="location"><span></span>제주 제주시 한림읍 금능길 80</p>
+                        </a>
+                    </li>
+                    <li class="store swiper-slide">
+                        <a href="#">
+                            <div class="image">
+                                <img src="../html/assets/img/store12.jpg" alt="블리홈" />
+                                <div>
+                                    <p class="tag">
+                                        <span>#상수동</span>
+                                        <span>#리빙</span>
+                                        <span>#인테리어</span>
+                                        <span>#포토스팟</span>
+                                    </p>
+                                    <p class="name">블리홈</p>
+                                </div>
+                            </div>
+                            <p class="location"><span></span>서울 마포구 와우산로13길 43</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="slider__scroll__wrap">
+                <div>
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
         </section>
-        <!-- sliderType -->
+        <!-- // slider1 -->
 
-        <section id="imgTextType" class="imgText__wrap section scroll">
-            <div class="imgText__inner container">
-                <div class="imgText__article1">
-                    <div class="imgText__text">
-                        <span>New!</span>
-                        <h3><a href="#">집요하게 다듬은 예술가의 언어, 오민</a></h3>
-                    </div>
-                    <div class="imgText__img">
-                        <img src="../html/assets/img/imgtext__bg01.jpg" alt="">
-                    </div>
+        <div class="intro">
+            <p class="intro__moveText">
+                세상에 모든 소품샵을 한눈에
+            </p>
+            <div class="intro__text">
+                <dl class="desc">
+                    <dt></dt>
+                    <dd>
+                        여기저기 흩어져있는<br>
+                        <em>소품샵</em>의 정보를<br>
+                        확인해 보세요
+                    </dd>
+                </dl>
+                <p>
+                    소품샵에 대한 정보를 한 눈에 볼 수 있다면 얼마나 편할까?<br>
+                    ‘사뿐소품’ 프로젝트는 이러한 물음으로부터 시작되었습니다.<br><br>
+                    SNS 위주의 공지와 개별적인 정보 제공으로 인한 소비자의 불편함을 해결하기 위해<br>
+                    소품샵의 정보를 모아 그때그때 바로 확인할 수 있도록 구성하였고,<br>
+                    소비자와 판매자간 교류 공간이 되어 커뮤니케이션이 가능합니다.
+                </p>
+            </div>
+        </div>
+        <!-- // intro -->
+
+        <section id="myTip" class="myTip">
+            <h2>나만의 팁</h2>
+            <div class="myTip__inner">
+                <div class="tipBox t1">
+                    <span>🤓</span>
+                    <p>나만의 팁을 적어야 하는데 아는게 없어서 일단은 채우기 용으로...</p>
                 </div>
-                <div class="imgText__article2">
-                    <div class="imgText__text">
-                        <span>New!</span>
-                        <h3><a href="#">집요하게 다듬은 예술가의 언어, 오민</a></h3>
-                    </div>
-                    <div class="imgText__img">
-                        <img src="../html/assets/img/imgtext__bg02.jpg" alt="">
-                    </div>
+                <div class="tipBox t2">
+                    <p>나만의 팁을 적어야 하는데 아는게 없어서 일단은 채우기 용으로...<br>이번엔 길게 두줄로 써보기 룰루루룰루</p>
+                    <span>☺️</span>
+                </div>
+                <div class="tipBox t3">
+                    <span>😗</span>
+                    <p>나만의 팁을 적어야 하는데 아는게 없어서 일단은 채우기 용으로...</p>
+                </div>
+                <div class="tipBox t4">
+                    <p>나만의 팁을 적어야 하는데 아는게 없어서 일단은 채우기 용으로...<br>이번엔 길게 두줄로 써보기 룰루루룰루</p>
+                    <span>😶‍🌫️</span>
+                </div>
+            </div>
+            <div class="more"><a href="myTip.html">더보기</a></div>
+        </section>
+        <!-- // myTip -->
+
+        <section id="goto" class="goto">
+            <h2>바로가기</h2>
+            <div class="goto__inner">
+                <div class="box b1">
+                    <img src="../html/assets/img/list__icon.svg" alt="소품샵 리스트">
+                    <h3>소품샵 리스트</h3>
+                    <a href="sopumList.html">바로가기</a>
+                </div>
+                <div class="box b2">
+                    <img src="../html/assets/img/board__icon.svg" alt="소품샵 리스트">
+                    <h3>자유게시판</h3>
+                    <a href="board.html">바로가기</a>
+                </div>
+                <div class="box b3">
+                    <img src="../html/assets/img/myPage__icon.svg" alt="소품샵 리스트">
+                    <h3>마이페이지</h3>
+                    <a href="myPage.html">바로가기</a>
+                </div>
+                <div class="box b4">
+                    <img src="../html/assets/img/faq__icon.svg" alt="소품샵 리스트">
+                    <h3>고객센터</h3>
+                    <a href="faq.html">바로가기</a>
                 </div>
             </div>
         </section>
-        <!-- imgTextType -->
-
-        <section id="cardSliderType" class="section scroll">
-            <div class="cardSlider__wrap">
-                <h2 class="container">리뷰</h2>
-                <div class="cardSlider__img">
-                    <div class="cardSlider__inner">
-                        <div class="cardSlider s1" role="group" aria-label="1/5">
-                            <img src="../html/assets/img/cardSlider__bg01.jpg" alt="슬라이드 이미지1">
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <h3><a href="/">제목입니다</a></h3>
-
-                        </div>
-                        <div class="cardSlider s2" role="group" aria-label="1/5">
-                            <img src="../html/assets/img/cardSlider__bg02.jpg" alt="슬라이드 이미지1">
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <h3><a href="/">제목입니다</a></h3>
-
-                        </div>
-                        <div class="cardSlider s3" role="group" aria-label="1/5">
-                            <img src="../html/assets/img/cardSlider__bg03.jpg" alt="슬라이드 이미지1">
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <h3><a href="/">제목입니다</a></h3>
-                        </div>
-                        <div class="cardSlider s4" role="group" aria-label="1/5">
-                            <img src="../html/assets/img/cardSlider__bg04.jpg" alt="슬라이드 이미지1">
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <h3><a href="/">제목입니다</a></h3>
-
-                        </div>
-                        <div class="cardSlider s5" role="group" aria-label="1/5">
-                            <img src="../html/assets/img/cardSlider__bg05.jpg" alt="슬라이드 이미지1">
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <span>#태그</span>
-                            <h3><a href="/">제목입니다</a></h3>
-
-                        </div>
-                    
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- cardSliderType -->
-
-        <section id="textType" class="text__wrap scroll container">
-            <h2 class="container">나만의 팁</h2>
-            <div class="text__inner">
-                <div class="text__article">
-                    <div class="text__desc">
-                        <span>#가을</span><span>#아이템</span><span>#소품</span><span>#추천</span>
-                        <h3><a href="/">놀랍게도 제목입니다. 나만의 팁!</a></h3>
-                    </div>
-                </div>
-                <div class="text__article">
-                    <div class="text__desc">
-                        <span>#가을</span><span>#아이템</span><span>#소품</span><span>#추천</span>
-                        <h3><a href="/">놀랍게도 제목입니다. 나만의 팁!</a></h3>
-                    </div>
-                </div>
-                <div class="text__article">
-                    <div class="text__desc">
-                        <span>#가을</span><span>#아이템</span><span>#소품</span><span>#추천</span>
-                        <h3><a href="/">놀랍게도 제목입니다. 나만의 팁!</a></h3>
-                    </div>
-                </div>
-                <div class="text__article">
-                    <div class="text__desc">
-                        <span>#가을</span><span>#아이템</span><span>#소품</span><span>#추천</span>
-                        <h3><a href="/">놀랍게도 제목입니다. 나만의 팁!</a></h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- textType -->
-
-        <section id="banner" class="banner__wrap scroll container">
-            <div class="banner__inner">
-                <div class="banner__img">
-                    <div class="banner__desc">
-                        <h3>버그를 제보해주세요!</h3>
-                        <p>버그 제보하고 1000포인트 받아가세요~</p>
-                        <a href="#">버그 알려주러 가기</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- banner -->
-        <section id="textType2" class="text__wrap2 scroll container">
-            <h2 class="container title2">공지사항</h2>
-            <div class="text__inner2">
-                <div class="text__article2">
-                    <div class="text__desc2">
-                        <span>2022.10.18</span>
-                        <h3><a href="/">사뿐소품의 공지사항입니다. 모두 주목!</a></h3>
-                    </div>
-                </div>
-                <div class="text__article2">
-                    <div class="text__desc2">
-                        <span>2022.10.18</span>
-                        <h3><a href="/">신규 등록된 상점 목록 알려드립니다.</a></h3>
-                    </div>
-                </div>
-                <div class="text__article2">
-                    <div class="text__desc2">
-                        <span>2022.10.18</span>
-                        <h3><a href="/">공지사항 제목입니다 짜쟌!</a></h3>
-                    </div>
-                </div>
-                <div class="text__article2">
-                    <div class="text__desc2">
-                        <span>2022.10.18</span>
-                        <h3><a href="/">공지사항 제목입니다 짜쟌!</a></h3>
-                    </div>
-                </div>
-                <div class="text__article2">
-                    <div class="text__desc2">
-                        <span>2022.10.18</span>
-                        <h3><a href="/">공지사항 제목입니다 짜쟌!</a></h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- textType -->
-        
     </main>
-    <!-- mainType -->
+    <!-- // main -->
 
     <?php include "../include/footer.php" ?>
     <!-- // footer -->
 
-    <script src="../html/assets/js/custom.js"></script>
-    <script src="../html/assets/js/swiper-bundle.min.js"></script>
-    <script src="../html/assets/js/cardSlider.js"></script>
+    <script src="../html/assets/js/test/jquery-3.4.1.min.js"></script>
+    <script src="../html/assets/js/test/swiper.min.js"></script>
+    <script src="../html/assets/js/test/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 
-        <!-- Initialize Swiper -->
-        <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true,
-            },
+    <script>
+        $(document).ready(function () {
+            sliderWidth();
+            var sliderWrap = new Swiper(".slider__list__wrap", {
+                slidesPerView: "auto",
+                spaceBetween: 30,
+                freeMode: true,
+                mousewheel: true,
+                scrollbar: {
+                    el: ".slider__scroll__wrap .swiper-scrollbar",
+                    hide: false,
+                },
+            });
+            $(".slider__tab > li > button").on("click", function () {
+                $(".slider__tab > li").removeClass("active");
+                $(this).parents("li").addClass("active");
+                var filter = $(this).attr("data-filter");
+                if (filter == "all") {
+                    $(".slider__list > li").css("display", "");
+                    sliderWrap.update();
+                    sliderWrap.scrollbar.updateSize();
+                    sliderWrap.slideTo(0);
+                } else {
+                    $(".slider__list > li").css("display", "none");
+                    $(".slider__list > li." + filter).css("display", "");
+                    sliderWrap.update();
+                    sliderWrap.scrollbar.updateSize();
+                    sliderWrap.slideTo(0);
+                }
+            });
+            $(".slider__list").hover(
+                function () {
+                    $(".cursor").addClass("drag");
+                },
+                function () {
+                    $(".cursor").removeClass("drag");
+                }
+            );
         });
-
-        const btnStop = document.querySelector(".swiper-button-stop");
-        const btnStart = document.querySelector(".swiper-button-stop");
-        const btnHam = document.querySelector(".header__ham");
-        const btnMenu = document.querySelector(".header__menu");
-        //const btnMenuList = btnMenu.querySelectorAll("ul li a");
-
-        btnStart.style.display = "none";
-
-        document.querySelector(".swiper-button-stop").addEventListener("click", () => {
-            swiper.autoplay.stop();
-            btnStart.style.display = "block";
-            btnStop.style.display = "none";
-
-        });
-        document.querySelector(".swiper-button-play").addEventListener("click", () => {
-            swiper.autoplay.start();
-            btnStart.style.display = "none";
-            btnStop.style.display = "block";
-        });
-
-        btnHam.addEventListener("click", () => {
-            btnHam.classList.toggle("active");
-            btnMenu.classList.toggle("active");
-            document.body.classList.toggle("fixed");
-
-        })
-
-        btnMenuList.forEach((List)=>{
-            List.addEventListener("click", ()=>{
-                btnMenu.classList.remove("active");
-                btnHam.classList.remove("active");
-                document.body.classList.remove("fixed");
-            })
-        })
-
-        window.addEventListener("resize", () => {
-            let width = window.innerWidth;
-            if (width > 1300) {
-                document.body.classList.remove("fixed");
-                btnMenu.classList.remove("active");
-                btnHam.classList.remove("active");
-
+        $(window).resize(function () {
+            sliderWidth();
+            if ($(window).outerWidth() < 1200) {
+                $(".slider__scroll__wrap").css("padding-left", "0");
             }
         });
+        function sliderWidth() {
+            var minusWidth = 0;
+            if ($(".wrap").outerHeight() > $(window).innerHeight()) {
+                minusWidth = ($(window).outerWidth() - 1200) / 2 - 8;
+            } else {
+                minusWidth = ($(window).outerWidth() - 1200) / 2;
+            }
 
-        document.querySelectorAll("a").forEach(li => {
-            li.addEventListener("click", (e) => {
-                e.preventDefault();
-                document.querySelector(li.getAttribute("href")).scrollIntoView({
-                    behavior:"smooth"
-                });
-            });
+            // $(".slider__scroll__wrap").css("padding-left", minusWidth + "px");
+        }
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(this).scrollTop(),
+                scrollVal = scroll / 1.3,
+                scrollTxt = $('.intro__moveText');
+
+            TweenMax.to(scrollTxt, .5, { x: -scrollVal })
         });
+    </script>
+    <script>
+        // top버튼
+        window.addEventListener("scroll", () => {
+            let scrollTop = window.pageYOffset || window.scrollY || document.documentElement.scrollTop;
+
+            // 02
+            if (scrollTop >= (document.body.scrollHeight - window.innerHeight)) {
+                document.querySelector(".goTop").classList.add("show");
+            } else {
+                document.querySelector(".goTop").classList.remove("show");
+            }
+
+        });
+
+        document.querySelector(".goTop").addEventListener("click", () => {
+            window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+        });
+
+    </script>
+    <script>
+        // myTip
+        function scroll() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.screenY;
+
+            document.querySelectorAll(".tipBox").forEach(item => {
+                if (scrollTop > item.offsetTop - window.innerHeight / 2) {
+                    item.classList.add("show");
+                }
+            });
+            requestAnimationFrame(scroll);
+        }
+        scroll();
     </script>
 
 
