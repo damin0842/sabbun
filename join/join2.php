@@ -1,5 +1,10 @@
+<?php
+    include "../connect/connect.php";
+    include "../connect/session.php";
+?>
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +16,7 @@
     <link rel="stylesheet" href="../html/assets/css/common.css">
     <link rel="stylesheet" href="../html/assets/css/join.css">
 </head>
+
 <body>
     <header id="header" class="header">
         <div class="logo">
@@ -25,7 +31,7 @@
             <div class="join__desc">
                 <h1>
                     <span>안녕하세요.</span><br>
-                    사이트 이용 목적이 무엇인가요?    
+                    사이트 이용 목적이 무엇인가요?
                 </h1>
                 <p>사뿐소품에서 어떤 회원으로 활동하실지 선택해주세요.</p>
             </div>
@@ -46,30 +52,30 @@
     </main>
 
     <script>
-        const bossBtn = document.querySelector(".boss");
-        const bossAct = document.querySelector(".boss.active");
-        const cusBtn = document.querySelector(".cus");
-        const cusAct = document.querySelector(".cus.active");
-        const nextBtn = document.querySelector(".join__Nbtn");
+    const bossBtn = document.querySelector(".boss");
+    const bossAct = document.querySelector(".boss.active");
+    const cusBtn = document.querySelector(".cus");
+    const cusAct = document.querySelector(".cus.active");
+    const nextBtn = document.querySelector(".join__Nbtn");
 
-        bossBtn.addEventListener("click", ()=>{
-            bossBtn.classList.add("active");
-            cusBtn.classList.remove("active");
-        });
+    bossBtn.addEventListener("click", () => {
+        bossBtn.classList.add("active");
+        cusBtn.classList.remove("active");
+    });
 
-        cusBtn.addEventListener("click", ()=>{
-            cusBtn.classList.add("active");
-            bossBtn.classList.remove("active");
-        });
+    cusBtn.addEventListener("click", () => {
+        cusBtn.classList.add("active");
+        bossBtn.classList.remove("active");
+    });
 
-        nextBtn.addEventListener("click", ()=>{
-            if(bossBtn.classList.contains('active')){
-                window.location.href = 'join3-1.php';
-            } else {
-                window.location.href = 'join3-1.php';
-            }
-        });
-
+    nextBtn.addEventListener("click", () => {
+        if (bossBtn.classList.contains('active')) {
+            window.location.href = 'join3-1.php';
+        } else {
+            window.location.href = 'join3-2.php';
+        }
+    });
     </script>
 </body>
+
 </html>

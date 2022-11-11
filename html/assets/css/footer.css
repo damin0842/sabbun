@@ -1,16 +1,12 @@
 /* footer */
 .footer__wrap {
-    /* background-image: url(https://media.sandollcloud.com/static/images/PSP/contents/footer.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; */
     background-color: #f9f9f9;
 }
 
 .footer__inner {
     width: 100%;
     display: flex;
-    padding: 5rem 1rem;
+    padding: 5rem 1rem !important;
     overflow: hidden;
     position: relative;
 }
@@ -37,11 +33,14 @@
 }
 
 .footer__menu h4 {
-    font-size: 14px;
-    margin-right: 30px;
+    font-size: 0.9rem;
     color: #000;
     font-weight: 700;
-    width: 90px
+    margin-right: 5rem;
+}
+
+.footer__menu .mb {
+    margin-top: 10px;
 }
 
 .footer__cs {
@@ -49,25 +48,22 @@
 }
 
 .footer__menu .footer__cscenter {
-    font-size: 26px;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin-left: 18px;
     margin-bottom: 15px;
     text-align: top;
 }
 
 .footer__cs span {
     font-weight: 300;
-    margin-left: 20px;
 }
 
 .footer__menu li {
     font-size: 14px;
-
+    margin-right: 1rem;
 }
 
 .footer__menu li a {
-    margin-left: 20px;
     align-items: center;
 }
 
@@ -121,6 +117,29 @@
 
 @media(max-width:1300px) {}
 
-@media(max-width:768px) {}
+@media(max-width:712px) {
+    .footer__inner {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .footer__menu {
+        width: 100%;
+    }
+
+    .footer__icon {
+        display: none;
+    }
+}
+
+@media(max-width:540px) {
+    .footer__menu h4 {
+        margin-right: 3rem;
+    }
+
+    .footer__menu .footer__cscenter {
+        margin-left: 0;
+    }
+}
 
 @media(max-width:480px) {}

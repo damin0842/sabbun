@@ -43,35 +43,33 @@
                         <h2><?=$myPageInfo['youName']?> 님</h2>
                         <ul>
                             <li>손님 회원</li>
-                            <li>kkb7528@naver.com</li>
-                            <li>010-0000-0000</li>
+                            <li><?=$myPageInfo['youEmail']?></li>
+                            <li><?=$myPageInfo['youPhone']?></li>
                         </ul>
                     </div>
                 </div>
                 <div id="myPageModify" class="myPageModify">
-                    <div class="myPageModify__header">
-                        <h2>회원정보 수정하기</h2>
-                    </div>
                     <div class="myPage__inner">
-                        <form action="myPageModify.php" name="modify" method="post" enctype="multipart/form-data" onsubmit="return modifyChecks()">
+                        <form action="myPageModify.php" name="modify" method="post" enctype="multipart/form-data"
+                            onsubmit="return modifyChecks()">
                             <fieldset>
-                                <legend>회원정보수정</legend>
+                                <legend class="ir">회원정보수정</legend>
                                 <div class="modify__box">
                                     <div class="youInfo">
                                         <div class="disabled">
                                             <label for="youName">이름</label>
                                             <input type="text" id="youName" name="youName" maxlength="5"
-                                                placeholder="<?=$memberInfo['youName'];?>" disabled>
+                                                placeholder="<?=$myPageInfo['youName'];?>" disabled>
                                         </div>
                                         <div class="disabled">
                                             <label for="youNickName">닉네임</label>
                                             <input type="text" id="youNickName" name="youNickName"
-                                                placeholder="<?=$memberInfo{'youNickName'}?>" disabled>
+                                                placeholder="<?=$myPageInfo{'youNickName'}?>" disabled>
                                         </div>
                                         <div class="disabled">
                                             <label for="youEmail">이메일</label>
                                             <input type="email" id="youEmail" name="youEmail"
-                                                placeholder="<?=$memberInfo{'youEmail'}?>" disabled>
+                                                placeholder="<?=$myPageInfo{'youEmail'}?>" disabled>
                                         </div>
                                         <div class="overlap">
                                             <label for="youPass">비밀번호</label>
@@ -84,7 +82,8 @@
                                         </div>
                                         <div>
                                             <label for="youPassC">비밀번호 확인</label>
-                                            <input type="password" id="youPassC" name="youPassC" maxlength="20" placeholder="" required>
+                                            <input type="password" id="youPassC" name="youPassC" maxlength="20"
+                                                placeholder="" required>
                                             <p class="msg" id="youPassCComment">
                                                 <!-- * 비밀번호가 일치하지 않습니다. -->
                                             </p>
@@ -92,26 +91,28 @@
                                         <div>
                                             <label for="youPhone">휴대폰 번호</label>
                                             <input type="text" id="youPhone" name="youPhone" maxlength="15"
-                                                placeholder="<?=$memberInfo{'youPhone'}?>" value="<?=$memberInfo{'youPhone'}?>" required>
+                                                placeholder="<?=$myPageInfo{'youPhone'}?>"
+                                                value="<?=$myPageInfo{'youPhone'}?>" required>
                                             <p class="msg" id="youPhoneComment">
                                                 <!-- * 형식이 맞지 않습니다.(010-0000-0000) -->
                                             </p>
                                         </div>
                                     </div>
                                     <div class="moreover">
-                                        <div>
+                                        <div class="youImg">
                                             <label for="blogFile">프로필 이미지</label>
-                                            <input type="file" name="blogFile" id="blogFile" accept=".jpg, .jpeg, .png, .gif" placeholder="jpg, jpeg, png, gif 파일만 넣어주세요!" >
+                                            <input type="file" name="blogFile" id="blogFile"
+                                                accept=".jpg, .jpeg, .png, .gif"
+                                                placeholder="jpg, jpeg, png, gif 파일만 넣어주세요!">
                                         </div>
-                                      
                                         <div class="youGd">
                                             <label for="youGender">성별</label>
                                             <div class="btn men">
-                                                <img src="assets/img/boy-dynamic-color@3x.png" alt="남성">
+                                                <img src="../html/assets/img/boy-dynamic-color@3x.png" alt="남성">
                                                 <span>남성</span>
                                             </div>
                                             <div class="btn women">
-                                                <img src="assets/img/girl-dynamic-color@3x.png" alt="여성">
+                                                <img src="../html/assets/img/girl-dynamic-color@3x.png" alt="여성">
                                                 <span>여성</span>
                                             </div>
                                         </div>
@@ -125,65 +126,20 @@
             </section>
             <section id="aside">
                 <div class="goWrite">
-    
+                    <p>나만 알고 있는 나만의 팁이 있다면 함께 공유하고 새로운 팁도 얻어가세요 !</p>
+                    <a href="myTip.html"></a>
                 </div>
                 <div class="goMenu">
-    
+                    <h3>마이페이지</h3>
+                    <ul>
+                        <li class="active"><a href="myPage.php">회원 정보 수정</a></li>
+                        <li><a href="myPageBoard.php">게시물</a></li>
+                        <!-- <li><a href="myPageLike.php">관심 리스트</a></li> -->
+                    </ul>
                 </div>
             </section>
         </div>
     </main>
-
-    <!-- <main id="main">
-        <section id="myPage" class="nanum container">
-            <div class="myPage__header">
-                <div class="right">
-                    <img src="../html/assets/img/profile/<?=$myPageInfo['blogImgFile']?>" alt="">
-                    <h2><?=$myPageInfo['youName']?> 님</h2>
-                    <a href="myPageSetting.php"></a>
-                </div>
-                <div class="left">
-                    <span>회원 구분</span>
-                    <p>손님</p>
-                </div>
-            </div>
-            <div class="myPage__contents">
-                <ul>
-                    <li class="active"><a href="#">게시물</a></li>
-                    <li><a href="#">관심스토어</a></li>
-                </ul>
-                <div class="list">
-                    <div class="card">
-                        <img src="../html/assets/img/cardSlider__bg02.jpg" alt="게시글1">
-                        <a href="#"></a>
-                    </div>
-                    <div class="card">
-                        <img src="../html/assets/img/cardSlider__bg02.jpg" alt="게시글2">
-                        <a href="#"></a>
-                    </div>
-                    <div class="card">
-                        <img src="../html/assets/img/cardSlider__bg02.jpg" alt="게시글3">
-                        <a href="#"></a>
-                    </div>
-                    <div class="card">
-                        <img src="../html/assets/img/cardSlider__bg02.jpg" alt="게시글4">
-                        <a href="#"></a>
-                    </div>
-                    <div class="card">
-                        <img src="../html/assets/img/cardSlider__bg02.jpg" alt="게시글5">
-                        <a href="#"></a>
-                    </div>
-                    <div class="card">
-                        <img src="../html/assets/img/cardSlider__bg02.jpg" alt="게시글6">
-                        <a href="#"></a>
-                    </div>
-
-                    </div>
-                </div>
-            </div>        
-        </section>
-
-    </main> -->
 
     <?php include "../include/footer.php" ?>
     <!-- // footer -->
